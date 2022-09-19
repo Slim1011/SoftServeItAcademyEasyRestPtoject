@@ -12,6 +12,7 @@ namespace EasyRestProjectNetTeam2.Decorator
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeToWait));
             wait.Until(ExpectedConditions.ElementToBeClickable(element));
             element.Click();
+
         }
 
         public static void WaitAndSendKeys(this IWebElement element, IWebDriver driver, int timeToWait, string text)
